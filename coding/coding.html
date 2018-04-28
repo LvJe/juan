@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="/lion/lion.css"/>
+</head>
+<body>
+<div id="show_area">
+
+</div>
+<div>
+    <textarea id="code_area" rows="" cols="">
+
+    </textarea>
+</div>
+</body>
+<script>
+    $("#code_area").bind('input propertychange', function () {
+        $('#show_area').html($(this).val());
+    });
+</script>
+</html>
